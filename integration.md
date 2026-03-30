@@ -7,6 +7,6 @@ int main()
     Shell s;
     s.env["test"] = "keke";
     printf(s.prompt("echo $test"));
-    printf(s.env["$?"])
+    printf(s.env["$?"]);
     return 0;
 }
