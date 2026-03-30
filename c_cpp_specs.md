@@ -121,6 +121,7 @@ PENDING  - `virtual void f() final;`
 
 - Function templates:
 MODIFY(syntax)  - `template <typename T> T add(T a, T b) { return a + b; }` to `<T> T add(T a, T b) { return a + b; }`
+ADD(force templace inheritance type <T:ParentType>) - `<T:ParentType> T add(T a, T b) { return a + b; }`
 - Class templates:
 MODIFY(syntax)  - `template <typename T> class Vector { ... };` to `class Vector<T> { ... };`
 - Template specialization:
