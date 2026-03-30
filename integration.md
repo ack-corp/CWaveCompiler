@@ -9,7 +9,7 @@ int main()
     print(s.prompt("echo $test"));
     print(s.env["$?"]);
 
-    arr = [1, 2, 3];
+    int[] arr = [1, 2, 3];
     if (arr.in(1, 2, 3))
         print("viva l'algerie");
 
