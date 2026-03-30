@@ -16,7 +16,7 @@ DELETE(native management) - `#pragma`: implementation-defined compiler directive
 ## 2. Types and Declarations
 
 - Built-in types:
-Modify(Fix the bytes size, it should not depend from arch, make it classes) - `int`(4 bytes), `short`(2 bytes), `long`(4 bytes), `long long`(8 bytes), `char`(1 byte), `float`, `double`, `long double`, `bool`
+Modify(Fix the bytes size, it should not depend from arch, make it classes, each classes should have some hidden attribute like type as in case of variadic/any type we could do object.type == int and things like that) - `int`(4 bytes), `short`(2 bytes), `long`(4 bytes), `long long`(8 bytes), `char`(1 byte), `float`, `double`, `long double`, `bool`
 KEEP  - `unsigned`, `signed`
 DELETE  - `wchar_t`, `char16_t`, `char32_t`
 KEEP - pointers: `int *p;`
