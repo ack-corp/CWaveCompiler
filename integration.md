@@ -28,6 +28,12 @@ int time_out()
     //TODO
 }
 
+
+int argumentStyle(int i)
+{
+    return i++
+}
+
 int main()
 {
     Shell s;
@@ -66,6 +72,18 @@ int main()
         else if (error.type == "my error")
             print("personnal error :\n" + error)
     }
+
+    int i = 1;
+    argumentStyle(i);
+    print(i); // 2
+
+    i = 1;
+    int j = argumentStyle(i.copy());
+    print(i); // 1
+    print(j); // 2
+    print(&j); //adress pointer
+
+
 
     return 0;
 }
