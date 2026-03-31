@@ -83,6 +83,17 @@ int main()
     print(j); // 2
     print(&j); //adress pointer
 
+    int k = new Integer(10); // the formater could give k a special color as its on the heap. But im not sure it could be tracked outside of the scope.
+    int l = new Integer(2); // the formater could give l a special color as its on the heap. But im not sure it could be tracked outside of the scope.
+
+    i = k; // ok, i = 10
+    i = &k; // ok, i = the k adress
+    &i = &k; // ok, i = 10
+    k = 5; // ok, i = 5
+    l = k; // ok, l = 10
+    l = &k; // ok, l = the k adress
+    &l = &k; // maybe it is possible to trigger a compilation error here as we loose the l reference
+
 
 
     return 0;
